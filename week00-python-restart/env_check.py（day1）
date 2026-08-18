@@ -1,0 +1,7 @@
+cd Documents    # 进入当前位置的Documents文件夹
+cd ..           # 返回上一级目录
+cd /            #切换到根目录（Linux/macOS/WSL 的最顶层目录）
+cd /home        # Linux下进入home目录
+pwd             #打印当前所在目录路径（Linux/macOS/WSL 专用）
+dir             #打印当前所在目录路径（Windows专用）
+00 -version     #查看应用00的版本

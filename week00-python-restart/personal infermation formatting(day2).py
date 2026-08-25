@@ -1,0 +1,7 @@
+name = input('请输入姓名：')
+age = input('请输入年龄：')
+pro = input('请输入专业')
+print(f'姓名：{name}')
+print(f'年龄：{age}')
+print(f'专业：{pro}')
+print(f'大家好，我是{name},今年{age}岁，专业是{pro}，很高兴认识大家')

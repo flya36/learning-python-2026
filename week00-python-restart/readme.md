@@ -31,7 +31,7 @@
 | `voice_data_format_notes.md` | 语音数据格式笔记（WAV/MP3、采样率、目录结构） | 08.29 周六 |✅|
 | `weekly_comprehensive.py` | 本周综合小程序 | 08.30 周日 |⬜|
 | `voice_project_requirements_v0.1.md` | 语音项目数据预处理需求文档 V0.1 | 08.30 周日 |✅|
-| `weekly_review.md` | 本周复盘（完成情况、卡点、下周调整） | 08.30 周日 |
+| `weekly_review.md` | 本周复盘（完成情况、卡点、下周调整） | 08.30 周日 |✅|
 
 ---
 

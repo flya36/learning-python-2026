@@ -1,0 +1,13 @@
+{
+  "speaker_count": 3,
+  "total_samples": 128,
+  "real_samples": 64,
+  "fake_samples": 64,
+  "speaker_samples": {
+    "speaker_001": 42,
+    "speaker_002": 43,
+    "speaker_003": 43
+  },
+  "avg_duration_seconds": 3.2,
+  "export_time": "2026-09-03"
+}

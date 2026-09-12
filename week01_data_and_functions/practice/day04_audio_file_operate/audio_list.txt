@@ -1,0 +1,8 @@
+./dataset/speaker_001.wav
+./dataset/speaker_002.wav
+
+./dataset/speaker_003.wav
+./dataset/note.txt
+./dataset/speaker_004.wav
+./dataset/speaker_005.mp3
+./dataset/speaker_006.wav

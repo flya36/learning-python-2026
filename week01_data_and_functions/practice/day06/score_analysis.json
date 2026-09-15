@@ -1,0 +1,18 @@
+{
+  "fail_student_count": 0,
+  "max_score": {
+    "grade": "A",
+    "name": "李四",
+    "score": 92,
+    "subject": "Python"
+  },
+  "student_avg": {
+    "张三": 81.5,
+    "李四": 90.0,
+    "王五": 60.0
+  },
+  "subject_avg": {
+    "Python": 79.0,
+    "计算机网络": 83.0
+  }
+}

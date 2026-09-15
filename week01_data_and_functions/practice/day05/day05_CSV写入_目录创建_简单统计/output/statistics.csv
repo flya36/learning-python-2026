@@ -1,0 +1,4 @@
+speaker_id,total_samples,real_samples,fake_samples
+speaker_001,3,2,1
+speaker_002,2,1,1
+speaker_003,1,1,0

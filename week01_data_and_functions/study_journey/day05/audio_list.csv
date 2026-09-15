@@ -1,0 +1,3 @@
+file_path,speaker_id,label,duration
+data/audio/speaker_001_001.wav,speaker_001,real,3.2
+data/audio/speaker_001_002.wav,speaker_001,fake,2.8

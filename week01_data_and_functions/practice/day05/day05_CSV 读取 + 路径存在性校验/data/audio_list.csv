@@ -1,0 +1,6 @@
+file_name,speaker_id,label,duration
+speaker_001_001.wav,speaker_001,real,3.2
+speaker_001_002.wav,speaker_001,fake,2.8
+speaker_002_001.wav,speaker_002,real,4.1
+speaker_002_002.wav,speaker_002,real,3.7
+speaker_003_001.wav,speaker_003,fake,3.0

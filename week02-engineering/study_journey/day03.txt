@@ -1,0 +1,9 @@
+在项目文件夹打开cmd
+1.创建虚拟环境文件（venv）
+python -m venv .venv
+2.激活虚拟环境
+项目\.venv\Scripts\activate
+3.安装依赖
+(.venv)前面要出现括号及内容显示已经激活        pip install requests
+4.退出激活状态
+deactivate

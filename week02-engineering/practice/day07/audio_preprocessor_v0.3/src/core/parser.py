@@ -1,9 +1,19 @@
 import logging
 from pathlib import Path
 from typing import List
+import soundfile as sf
 from models.audio_sample import AudioSample
 
 logger = logging.getLogger(__name__)
+
+
+def get_audio_duration(file_path: str) -> float:
+    """读取音频真实时长（秒），失败时返回0.0"""
+    try:
+        return round(sf.info(file_path).duration, 3)
+    except Exception as e:
+        logger.warning(f"读取音频时长失败 {Path(file_path).name}：{str(e)}")
+        return 0.0
 
 
 def parse_audio_path(file_path: str) -> AudioSample:
@@ -34,7 +44,7 @@ def parse_audio_path(file_path: str) -> AudioSample:
         file_path=str(path.absolute()),
         speaker_id=speaker_id,
         label=label,
-        duration=0.0
+        duration=get_audio_duration(str(path.absolute()))
     )
 
 
@@ -45,7 +55,7 @@ def scan_audio_dir(dir_path: str) -> List[AudioSample]:
         raise NotADirectoryError(f"目录不存在：{dir_path}")
 
     samples = []
-    for audio_file in dir_path.rglob("*.wav"):
+    for audio_file in list(dir_path.rglob("*.wav")) + list(dir_path.rglob("*.mp3")):
         try:
             sample = parse_audio_path(str(audio_file))
             samples.append(sample)

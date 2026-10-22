@@ -5,7 +5,7 @@
 
 ## 技术栈
 - Python 3.10+
-- 仅依赖标准库（dataclasses / pathlib / csv / json / logging）
+- 标准库（dataclasses / pathlib / csv / json / logging）+ soundfile（音频真实时长计算，V0.3.1 起）
 
 ## 目录结构
 ```
@@ -26,7 +26,7 @@ audio_preprocessor_v0.3/
 
 ## 快速开始
 1. 创建虚拟环境：`python -m venv venv`（Windows：`venv\Scripts\activate`）
-2. 安装依赖：`pip install -r requirements.txt`（本版本无第三方依赖）
+2. 安装依赖：`pip install -r requirements.txt`
 3. 运行：
    ```
    cd src
@@ -45,4 +45,5 @@ audio_preprocessor_v0.3/
 - `logs/app.log`：运行日志
 
 ## 版本记录
+- **v0.3.1**：接入 soundfile 实现音频真实时长计算（替代 duration 占位），支持 .wav/.mp3 扫描；修复 Python 3.14 下 librosa/numba 兼容问题（MFCC 留待 V0.4）
 - **v0.3**：OOP重构——dataclass数据模型 + 组合模式数据集管理，模块化分层（models/core/utils），加入异常处理与日志

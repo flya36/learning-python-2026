@@ -1,6 +1,4 @@
 # 第3周｜W2 Python工程化 + 语音数据预处理工具升级 学习日志
-> 周期：2026-09-07 — 2026-09-13 | 总时长：约37小时
-> 阶段定位：从「会写脚本」到「会做工程」的核心过渡周，完成代码工程化改造与语音工具V0.3版本交付
 
 ## 一、本周核心目标
 1. **Python工程能力升级**：掌握模块拆分、异常处理、虚拟环境、日志系统、面向对象基础，形成可复用的Python工程脚手架
@@ -20,34 +18,7 @@
 | 09-12 周六 | OOP实践 | 继承、组合、`dataclass` | 链表1题 + 代码重构 | 重构为`AudioDataset`类，支持样本管理、统计、导出 | — |
 | 09-13 周日 | 周复盘 | 整理Python工程模板、语音项目数据规范 | 错题复盘 + 环境搭建测速 | 输出工程脚手架、语音工具V0.3、数据规范文档 | 5道OS题口述验收 + 周复盘 |
 
-## 三、项目产出与目录结构
-### 语音数据预处理工具 V0.3
-```
-audio-preprocess-tool/
-├── main.py                 # 程序主入口
-├── parser/                 # 解析模块
-│   ├── __init__.py
-│   └── path_parser.py      # 音频路径解析、元数据提取
-├── statistics/             # 统计模块
-│   ├── __init__.py
-│   └── counter.py          # 说话人统计、时长统计、样本分布
-├── exporter/               # 导出模块
-│   ├── __init__.py
-│   ├── json_exporter.py
-│   └── csv_exporter.py
-├── models/                 # 数据模型
-│   ├── __init__.py
-│   ├── audio_sample.py     # AudioSample 类
-│   └── audio_dataset.py    # AudioDataset 类
-├── utils/                  # 工具函数
-│   ├── __init__.py
-│   ├── exceptions.py       # 自定义异常
-│   └── logger.py           # 日志配置
-├── logs/                   # 运行日志目录
-├── requirements.txt        # 依赖清单
-├── README.md               # 项目说明
-└── examples/               # 示例数据与脚本
-```
+
 
 ### 本周交付物
 1. 语音数据预处理工具 V0.3（模块化 + 异常处理 + 日志 + OOP重构）
